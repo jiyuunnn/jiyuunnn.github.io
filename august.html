@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <button id="playPauseBtn"><img src="./img/pause.png" alt="Pause"></button>
+    <button id="playPauseBtn"><img src="pause.png" alt="Pause"></button>
     <div>
         <header>
             <a href="main.html" target="_self" style="color: black; text-decoration: none;">
@@ -35,35 +35,35 @@
     </div>
     <div id="image-container">
         <div id="pic">
-            <img src="./img/august.jpg" width="500px" style="border:0px;">
+            <img src="august.jpg" width="500px" style="border:0px;">
         </div>
         <div id="info" style="margin-left: 20px;">
             <div>
-                <img src="./img/0.png">
+                <img src="0.png">
                 <h1>보령 머드 축제</h1>
             </div>
             <div>
-                <img src="./img/1.png">
+                <img src="1.png">
                 <h1>2024.07.19 ~ 2024.08.04</h1>
             </div>
             <div>
-                <img src="./img/2.png">
+                <img src="2.png">
                 <h1>충남 보령시 머드로 123 대천해수욕장 머드광장</h1>
             </div>
             <div>
-                <img src="./img/3.png">
+                <img src="3.png">
                 <h1>유료</h1>
             </div>
             <div>
-                <img src="./img/4.png">
+                <img src="4.png">
                 <h1>보령시 / 보령축제관광재단</h1>
             </div>
             <div>
-                <img src="./img/5.png">
+                <img src="5.png">
                 <h1>041-930-0891</h1>
             </div>
             <div>
-                <img src="./img/6.png">
+                <img src="6.png">
                 <h1>대표 먹거리 정보</h1>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <audio id="backgroundAudio" src="./mp4/i like me better.mp4" autoplay></audio>
     </div>
     <div id="fu" style="position: fixed; bottom: 20px; right: 20px;">
-        <a href="https://www.mudfestival.or.kr/intro/view"><img src="./img/search.png" width="300px" style="border:0px;"></a>
+        <a href="https://www.mudfestival.or.kr/intro/view"><img src="search.png" width="300px" style="border:0px;"></a>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -83,11 +83,11 @@
             playPauseBtn.addEventListener('click', () => {
                 if (audio.paused) {
                     audio.play();
-                    playPauseImg.src = './img/pause.png';
+                    playPauseImg.src = 'pause.png';
                     playPauseImg.alt = 'Pause';
                 } else {
                     audio.pause();
-                    playPauseImg.src = './img/play.png';
+                    playPauseImg.src = 'play.png';
                     playPauseImg.alt = 'Play';
                 }
             });
