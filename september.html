@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>September</title>
+    <link rel="stylesheet" href="co.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button id="playPauseBtn"><img src="./img/pause.png" alt="Pause"></button>
+    <div>
+        <header>
+            <a href="main.html" target="_self" style="color: black; text-decoration: none;">
+                KOREAN EVENT CALENDAR
+            </a>
+        </header>
+    </div>
+    <div>
+        <ul>
+            <li><a href="june.html" target="_self">June</a></li>
+            <li><a href="july.html" target="_self">July</a></li>
+            <li><a href="august.html" target="_self">August</a></li>
+            <li style="font-size: 32px;"><a href="september.html" target="_self">September</a></li>
+            <li><a href="october.html" target="_self">October</a></li>
+            <li><a href="november.html" target="_self">November</a></li>
+            <li><a href="december.html" target="_self">December</a></li>
+        </ul>
+    </div>
+    <div id="festival">
+        <h1></h1>
+    </div>
+    <div id="image-container">
+        <div id="pic">
+            <img src="./img/september.jpg" width="500px" style="border:0px;">
+        </div>
+        <div id="info" style="margin-left: 20px;">
+            <div>
+                <img src="./img/0.png">
+                <h1>무주 반딧불 축제</h1>
+            </div>
+            <div>
+                <img src="./img/1.png">
+                <h1>2024.08.31 ~ 2024.09.08</h1>
+            </div>
+            <div>
+                <img src="./img/2.png">
+                <h1>전북 무주군 무주읍 한풍루로 326-17 지남공원</h1>
+            </div>
+            <div>
+                <img src="./img/3.png">
+                <h1>무료(일부 유료)</h1>
+            </div>
+            <div>
+                <img src="./img/4.png">
+                <h1>전라북도 무주군 / 무주반딧불축제제전위원회</h1>
+            </div>
+            <div>
+                <img src="./img/5.png">
+                <h1>063-324-2440</h1>
+            </div>
+            <div>
+                <img src="./img/6.png">
+                <h1>대표 먹거리 정보</h1>
+            </div>
+        </div>
+    </div>
+    <div class="audio-container">
+        <audio id="backgroundAudio" src="./mp4/christmas tree.mp4"autoplay preload="auto"></audio>
+    </div>
+    <div id="fu" style="position: fixed; bottom: 20px; right: 20px;">
+        <a href="https://www.firefly.or.kr/#"><img src="./img/search.png" width="300px" style="border:0px;"></a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('backgroundAudio');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playPauseImg = playPauseBtn.querySelector('img');
+
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    playPauseImg.src = './img/pause.png';
+                    playPauseImg.alt = 'Pause';
+                } else {
+                    audio.pause();
+                    playPauseImg.src = './img/play.png';
+                    playPauseImg.alt = 'Play';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

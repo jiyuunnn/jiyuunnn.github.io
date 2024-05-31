@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>October</title>
+    <link rel="stylesheet" href="co.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button id="playPauseBtn"><img src="./img/pause.png" alt="Pause"></button>
+    <div>
+        <header>
+            <a href="main.html" target="_self" style="color: black; text-decoration: none;">
+                KOREAN EVENT CALENDAR
+            </a>
+        </header>
+    </div>
+    <div>
+        <ul>
+            <li><a href="june.html" target="_self">June</a></li>
+            <li><a href="july.html" target="_self">July</a></li>
+            <li><a href="august.html" target="_self">August</a></li>
+            <li><a href="september.html" target="_self">September</a></li>
+            <li style="font-size: 32px;"><a href="october.html" target="_self">October</a></li>
+            <li><a href="november.html" target="_self">November</a></li>
+            <li><a href="december.html" target="_self">December</a></li>
+        </ul>
+    </div>
+    <div id="festival">
+        <h1></h1>
+    </div>
+    <div id="image-container">
+        <div id="pic">
+            <img src="./img/october.jpg" width="500px" style="border:0px;">
+        </div>
+        <div id="info" style="margin-left: 20px;">
+            <div>
+                <img src="./img/0.png">
+                <h1>진주 남강유등축제</h1>
+            </div>
+            <div>
+                <img src="./img/1.png">
+                <h1>2024년 10월 중</h1>
+            </div>
+            <div>
+                <img src="./img/2.png">
+                <h1>경남 진주시 남강로 626 남강</h1>
+            </div>
+            <div>
+                <img src="./img/3.png">
+                <h1>무료(개별 프로그램 이용료 부과)</h1>
+            </div>
+            <div>
+                <img src="./img/4.png">
+                <h1>진주시·진주문화예술재단 / 진주남강유등축제 제전위원회</h1>
+            </div>
+            <div>
+                <img src="./img/5.png">
+                <h1>055-755-9111</h1>
+            </div>
+            <div>
+                <img src="./img/6.png">
+                <h1>대표 먹거리 정보</h1>
+            </div>
+        </div>
+    </div>
+    <div class="audio-container">
+        <audio id="backgroundAudio" src="./mp4/kiss me kiss me.mp4"autoplay></audio>
+    </div>
+    <div id="fu" style="position: fixed; bottom: 20px; right: 20px;">
+        <a href="https://yudeung.com"><img src="./img/search.png" width="300px" style="border:0px;"></a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('backgroundAudio');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playPauseImg = playPauseBtn.querySelector('img');
+
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    playPauseImg.src = './img/pause.png';
+                    playPauseImg.alt = 'Pause';
+                } else {
+                    audio.pause();
+                    playPauseImg.src = './img/play.png';
+                    playPauseImg.alt = 'Play';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
